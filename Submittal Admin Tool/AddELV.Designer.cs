@@ -28,70 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddELV));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Save = new System.Windows.Forms.Button();
-            this.partno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.url = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tittle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cddissue = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.cddno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duration = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.partno,
-            this.url,
-            this.CDD,
-            this.ul,
-            this.tittle,
-            this.cddissue,
-            this.cddno,
-            this.duration});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.Size = new System.Drawing.Size(867, 386);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(823, 451);
+            this.Save.Location = new System.Drawing.Point(71, 365);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 1;
@@ -99,60 +54,113 @@
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
-            // partno
+            // groupBox1
             // 
-            this.partno.HeaderText = "PART NUMBER";
-            this.partno.Name = "partno";
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(47, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(824, 211);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ELV-Data";
             // 
-            // url
+            // textBox1
             // 
-            this.url.HeaderText = "URL";
-            this.url.Name = "url";
+            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
+            this.textBox1.Location = new System.Drawing.Point(63, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(118, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.WordWrap = false;
             // 
-            // CDD
+            // label1
             // 
-            this.CDD.HeaderText = "CDD";
-            this.CDD.Name = "CDD";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(60, 24);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(132, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Manufacturer Part Number";
             // 
-            // ul
+            // label2
             // 
-            this.ul.HeaderText = "UL";
-            this.ul.Name = "ul";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(209, 24);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(155, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Civil Defence Approval Number";
             // 
-            // tittle
+            // textBox2
             // 
-            this.tittle.HeaderText = "TITTLE";
-            this.tittle.Name = "tittle";
+            this.textBox2.Location = new System.Drawing.Point(212, 40);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(118, 20);
+            this.textBox2.TabIndex = 2;
             // 
-            // cddissue
+            // label3
             // 
-            dataGridViewCellStyle2.NullValue = "2014-01-01";
-            this.cddissue.DefaultCellStyle = dataGridViewCellStyle2;
-            this.cddissue.HeaderText = "ISSUE DATE";
-            this.cddissue.Name = "cddissue";
-            this.cddissue.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cddissue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(374, 24);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label3.Size = new System.Drawing.Size(141, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Civil Defence Approval Date";
             // 
-            // cddno
+            // label4
             // 
-            this.cddno.HeaderText = "CDD FILE NUMBER";
-            this.cddno.Name = "cddno";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(596, 24);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label4.Size = new System.Drawing.Size(158, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Civil Defence Approval Duration";
             // 
-            // duration
+            // dateTimePicker1
             // 
-            dataGridViewCellStyle3.NullValue = "1 YEAR";
-            this.duration.DefaultCellStyle = dataGridViewCellStyle3;
-            this.duration.HeaderText = "DURATION IN YEARS";
-            this.duration.Items.AddRange(new object[] {
+            this.dateTimePicker1.Location = new System.Drawing.Point(377, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "1 YEAR",
             "2 YEAR",
             "3 YEAR",
             "4 YEAR",
             "5 YEAR"});
-            this.duration.Name = "duration";
-            this.duration.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.duration.Sorted = true;
-            this.duration.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(599, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(63, 175);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // AddELV
             // 
@@ -160,8 +168,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(925, 508);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Save);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -172,22 +180,24 @@
             this.Text = "ELV Add Data";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddELV_FormClosed);
             this.Load += new System.EventHandler(this.AddELV_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Save;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn url;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CDD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tittle;
-        private System.Windows.Forms.DataGridViewLinkColumn cddissue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cddno;
-        private System.Windows.Forms.DataGridViewComboBoxColumn duration;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

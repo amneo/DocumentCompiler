@@ -1,0 +1,38 @@
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\x86\sqlite3.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\x64\sqlite3.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe.config
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.pdb
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\EntityFramework.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\EntityFramework.SqlServer.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.EF6.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.Linq.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\EntityFramework.xml
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\EntityFramework.SqlServer.xml
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.xml
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.dll.config
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csprojResolveAssemblyReference.cache
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.AddELV.resources
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.MainWindow.resources
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.Properties.Resources.resources
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateForm.resources
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csproj.GenerateResource.Cache
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
+D:\develop\subutool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
