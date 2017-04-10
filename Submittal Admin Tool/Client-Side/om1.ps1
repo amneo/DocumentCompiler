@@ -1,5 +1,5 @@
 $start_time = get-date
-$version = "00.08.07a"
+$version = "00.09.00a"
 # Create Submittal out of Text Index.
 #######
 #Date: 2013-05-22
@@ -32,8 +32,8 @@ $indexfile = "$home\desktop\index.txt"
 $facpsimplex = "X:\ELV-Subs\facpsimplex\" # Folder path for Simplex datasheets
 $facpsimplexcvr = "X:\ELV-Subs\facpsimplex\COVER\" # Folder path for Covers
 $facpsimplexcdd = "X:\ELV-Subs\facpsimplex\CDD\" # Folder path for CDD documents
-$facpsimplexul = "X:\ELV-Subs\facpsimplex\UL\" # Folder path for UL documents
-$facpsimplexfm = "X:\ELV-Subs\facpsimplex\FM\" # Folder path for FM documents
+$facpsimplexul = "X:\ELV-Subs\facpsimplex\UL\" # Folder path for Third party document
+$facpsimplexfm = "X:\ELV-Subs\facpsimplex\FM\" # Folder path for FM documents-- This would be removed after stable release of 9.0
 $certcover = " X:\ELV-Subs\facpsimplex\COVER\CERTS-COVER.pdf" # Cover for Certificates cover
 $doccover = "X:\ELV-Subs\facpsimplex\COVER\SUB-COVER-R2.pdf" # Cover for the document
 $customfldr = "$home\desktop\Custom\"

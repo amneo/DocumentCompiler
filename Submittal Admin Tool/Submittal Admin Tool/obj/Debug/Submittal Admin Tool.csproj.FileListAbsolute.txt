@@ -11,3 +11,23 @@ C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submi
 C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.AddELV.resources
 C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateFormMech.resources
 C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateMech.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe.config
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.pdb
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\SQLite.Designer.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\System.Data.SQLite.Linq.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\EnvDTE.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\stdole.dll
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csprojResolveAssemblyReference.cache
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.AddELV.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.MainWindow.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.Properties.Resources.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateFormMech.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateMech.resources
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csproj.GenerateResource.Cache
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
