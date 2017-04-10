@@ -39,7 +39,7 @@ namespace Submittal_Admin_Tool
 
         private void cddselect_Click(object sender, EventArgs e)
         {
-            if (cddvalue.Text == "")
+            if (partno.Text == "")
             {
                 string mynewquery = string.Format("select partno,url,cdd,ul,tittle,cddissue,cddno,duration,expirydt from simplex");
                 //MessageBox.Show(mynewquery);
@@ -60,7 +60,7 @@ namespace Submittal_Admin_Tool
             }
             else
             {
-                string mynewquery = string.Format("select partno,url,cdd,ul,tittle,cddissue,cddno,duration,expirydt from simplex where cddno = \'{0}\'", cddvalue.Text);
+                string mynewquery = string.Format("select partno,url,cdd,ul,tittle,cddissue,cddno,duration,expirydt from simplex where partno = \'{0}\'", partno.Text);
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 SQLiteDataAdapter da = new SQLiteDataAdapter();
@@ -86,11 +86,11 @@ namespace Submittal_Admin_Tool
 
             if (newcddno.Text != "")
             {
-                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" where cddno= \'{3}\'", newcddno.Text, issuedate.Text, yearselect.Text, cddvalue.Text);
+                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" where partno='{3}\'", newcddno.Text, issuedate.Text, yearselect.Text, partno.Text);
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 cmd.ExecuteNonQuery();
-                cddvalue.Text = newcddno.Text;
+                partno.Text = partno.Text;  //Not required since updateing with part numbers
                 cddselect_Click(sender, e);
                 newcddno.Text = "";
             }

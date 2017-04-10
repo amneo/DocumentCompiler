@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFormMech));
-            this.cddvalue = new System.Windows.Forms.TextBox();
+            this.partno = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.newcddno = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,22 +48,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // cddvalue
+            // partno
             // 
-            this.cddvalue.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.cddvalue.Location = new System.Drawing.Point(12, 59);
-            this.cddvalue.Name = "cddvalue";
-            this.cddvalue.Size = new System.Drawing.Size(127, 20);
-            this.cddvalue.TabIndex = 1;
+            this.partno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.partno.Location = new System.Drawing.Point(12, 59);
+            this.partno.Name = "partno";
+            this.partno.Size = new System.Drawing.Size(127, 20);
+            this.partno.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "OLD CDD FILE NUMBER";
+            this.label1.Text = "PART NUMBER";
             // 
             // newcddno
             // 
@@ -86,7 +86,7 @@
             // Selection
             // 
             this.Selection.Controls.Add(this.cddselect);
-            this.Selection.Controls.Add(this.cddvalue);
+            this.Selection.Controls.Add(this.partno);
             this.Selection.Controls.Add(this.label1);
             this.Selection.Location = new System.Drawing.Point(23, 13);
             this.Selection.Name = "Selection";
@@ -198,7 +198,7 @@
             this.DatabaseDisplay.TabIndex = 0;
             this.DatabaseDisplay.Text = "DATABASE DISPLAY";
             // 
-            // UpdateForm
+            // UpdateFormMech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,7 +216,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "UpdateForm";
+            this.Name = "UpdateFormMech";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update ELV";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateForm_FormClosing);
@@ -233,7 +233,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox cddvalue;
+        private System.Windows.Forms.TextBox partno;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox newcddno;
         private System.Windows.Forms.Label label2;

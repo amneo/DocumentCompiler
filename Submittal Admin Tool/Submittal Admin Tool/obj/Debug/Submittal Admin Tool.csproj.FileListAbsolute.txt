@@ -31,3 +31,7 @@ D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug
 D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csproj.GenerateResource.Cache
 D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
 D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe.manifest
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.application
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe.manifest
+D:\develop\subutool\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.application
