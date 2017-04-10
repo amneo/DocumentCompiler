@@ -1,0 +1,11 @@
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\bin\Release\Submittal Admin Tool.exe.config
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\bin\Release\Submittal Admin Tool.exe
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\bin\Release\Submittal Admin Tool.pdb
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal_Admin_Tool.MainWindow.resources
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal_Admin_Tool.Properties.Resources.resources
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal Admin Tool.csproj.GenerateResource.Cache
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal Admin Tool.exe
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal Admin Tool.pdb
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal_Admin_Tool.UpdateForm.resources
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal Admin Tool.csprojResolveAssemblyReference.cache
+C:\Users\info_000\SkyDrive\Programming-Stuff\Submittal-Admin\SubmittalTool\Submittal Admin Tool\obj\Release\Submittal_Admin_Tool.AddELV.resources
