@@ -119,6 +119,11 @@
     <Compile Include="UpdateMech.Designer.cs">
       <DependentUpon>UpdateMech.cs</DependentUpon>
     </Compile>
+    <Compile Include="_elv_submDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_elv_submDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddELV.resx">
       <DependentUpon>AddELV.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +157,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Submittal Admin Tool_TemporaryKey.pfx" />
+    <None Include="_elv_submDataSet.xsc">
+      <DependentUpon>_elv_submDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_elv_submDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_elv_submDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_elv_submDataSet.xss">
+      <DependentUpon>_elv_submDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
@@ -172,6 +188,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

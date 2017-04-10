@@ -45,7 +45,7 @@ namespace Submittal_Admin_Tool
             command.CommandText = SQLInsert;
 
 
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+/*            foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (!row.IsNewRow)
                 {
@@ -68,7 +68,7 @@ namespace Submittal_Admin_Tool
                     }
                 }
               }
-            
+  */          
             SQLconnect.Close();
         }
 

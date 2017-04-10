@@ -103,7 +103,7 @@
             this.cddselect.TabIndex = 2;
             this.cddselect.Text = "SELECT";
             this.cddselect.UseVisualStyleBackColor = true;
-            this.cddselect.Click += new System.EventHandler(this.cddselect_Click);
+            this.cddselect.Click += new System.EventHandler(this.Cddselect_Click);
             // 
             // yearselect
             // 

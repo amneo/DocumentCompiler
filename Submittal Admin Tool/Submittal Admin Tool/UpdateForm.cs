@@ -37,7 +37,7 @@ namespace Submittal_Admin_Tool
             yearselect.SelectedIndex = 0;
         }
 
-        private void cddselect_Click(object sender, EventArgs e)
+        private void Cddselect_Click(object sender, EventArgs e)
         {
             if (partno.Text == "")
             {
@@ -90,8 +90,8 @@ namespace Submittal_Admin_Tool
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 cmd.ExecuteNonQuery();
-                partno.Text = partno.Text;  //Not required since updateing with part numbers
-                cddselect_Click(sender, e);
+                partno.Text = partno.Text;  //Not required since updating with part numbers
+                Cddselect_Click(sender, e);
                 newcddno.Text = "";
             }
             else
