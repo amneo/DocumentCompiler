@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Submittal Admin Tool.exe" size="892848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Submittal Admin Tool.exe" size="944560">
       <assemblyIdentity name="Submittal Admin Tool" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AP0RgGBT74nRVA3fJZCY0Ty/Iqn+ka8/6vw/YD2RZoE=</dsig:DigestValue>
+        <dsig:DigestValue>02bOEbO8GCc2r7/dDyraze+UGa/N6kBkysNz+pxhs9E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -159,13 +159,13 @@
       <dsig:DigestValue>qurTd1IyxWhFLCrPFxhGjl4UlJwk8HEHrZ2uE1SBlXs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Submittal Admin Tool.exe.config" size="144">
+  <file name="Submittal Admin Tool.exe.config" size="472">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jLCHdLm7v47ACsSCc72IOp8bA051ZvlIJCmYB91hk5o=</dsig:DigestValue>
+      <dsig:DigestValue>pGpOsan52iHbjb/QKDPR9dsZPkj10dBbqs4nAVY4Oz0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

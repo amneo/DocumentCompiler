@@ -86,7 +86,7 @@ namespace Submittal_Admin_Tool
 
             if (newcddno.Text != "")
             {
-                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" where partno='{3}\'", newcddno.Text, issuedate.Text, yearselect.Text, partno.Text);
+                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" , cdd = \"{0}\" where partno='{3}\'", newcddno.Text, issuedate.Text, yearselect.Text, partno.Text);
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 cmd.ExecuteNonQuery();
