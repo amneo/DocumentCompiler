@@ -82,6 +82,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Release\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,6 +113,9 @@
     </Compile>
     <Compile Include="UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_elv_submDataSet.cs">
+      <DependentUpon>_elv_submDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="_elv_submDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

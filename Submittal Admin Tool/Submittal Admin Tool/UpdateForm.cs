@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.IO;
 
 namespace Submittal_Admin_Tool
 {
+
     public partial class UpdateFormELV : Form
     {
-
+        private string approvalFileDestination;
         Data_connection dbobject = new Data_connection();
         SQLiteConnection SQLconnect = new SQLiteConnection();
         public UpdateFormELV()
@@ -23,7 +25,10 @@ namespace Submittal_Admin_Tool
 
         private void UpdateForm_Load(object sender, EventArgs e)
         {
-
+            // TODO: This line of code loads data into the '_elv_submDataSet.simplex' table. You can move, or remove it, as needed.
+            // this.simplexTableAdapter.Fill(this._elv_submDataSet.simplex);
+            // string approvalFileDestination = null;
+         
             try
             {
                 SQLconnect.ConnectionString = @"DateTimeFormat=ISO8601;DateTimeKind=local;FailIfMissing=True;Data Source=X:\ELV-Subs\elv-subm";
@@ -34,15 +39,15 @@ namespace Submittal_Admin_Tool
                 MessageBox.Show("We Encountered an error please fix the error as follows \nERROR CODE:SUBERR001 \n\n" + Ex.Message);
                 this.Close();
             }
-            yearselect.SelectedIndex = 0;
+            durationSelect.SelectedIndex = 0;
         }
 
         private void Cddselect_Click(object sender, EventArgs e)
         {
             if (partno.Text == "")
             {
-                string mynewquery = string.Format("select partno,url,cdd,ul,tittle,cddissue,cddno,duration,expirydt from simplex");
-                //MessageBox.Show(mynewquery);
+                string mynewquery = string.Format("SELECT systrade, partno,  cdd, ul,  tittle, cddissue, cddno, duration, expirydt,coo,url,isdatasheet FROM simplex");
+               //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 SQLiteDataAdapter da = new SQLiteDataAdapter();
                 DataTable dt = new DataTable();
@@ -60,8 +65,8 @@ namespace Submittal_Admin_Tool
             }
             else
             {
-                string mynewquery = string.Format("select partno,url,cdd,ul,tittle,cddissue,cddno,duration,expirydt from simplex where partno = \'{0}\'", partno.Text);
-                //MessageBox.Show(mynewquery);
+                string mynewquery = string.Format("SELECT systrade, partno,  cdd, ul,  tittle, cddissue, cddno, duration, expirydt,coo,url,isdatasheet FROM simplex where partno = \'{0}\'", partno.Text);
+              //  MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 SQLiteDataAdapter da = new SQLiteDataAdapter();
                 DataTable dt = new DataTable();
@@ -83,16 +88,16 @@ namespace Submittal_Admin_Tool
 
         private void updatebutton_Click(object sender, EventArgs e)
         {
-
-            if (newcddno.Text != "")
+           if (newcddno.Text  != "")
             {
-                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" , cdd = \"{0}\" where partno='{3}\'", newcddno.Text, issuedate.Text, yearselect.Text, partno.Text);
+                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" , cdd = \"{0}\" where partno='{3}\'", newcddno.Text, issuedate.Text, durationDigit.Text + " "+ durationSelect.Text, partno.Text);
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 cmd.ExecuteNonQuery();
                 partno.Text = partno.Text;  //Not required since updating with part numbers
                 Cddselect_Click(sender, e);
                 newcddno.Text = "";
+                File.Copy(approvalFile.Text, approvalFileDestination,true);
             }
             else
             {
@@ -103,6 +108,27 @@ namespace Submittal_Admin_Tool
 
         }
 
+        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.InitialDirectory = @"C:\";
+            openFileDialog1.Title = "Browse Approval PDF Files";
+            openFileDialog1.CheckFileExists = true;
+            openFileDialog1.CheckPathExists = true;
+            openFileDialog1.DefaultExt = "pdf";
+            openFileDialog1.Filter = "PDF File (*.pdf)|*.pdf";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+            openFileDialog1.ReadOnlyChecked = true;
+            openFileDialog1.ShowReadOnly = true;
+            openFileDialog1.Multiselect = false;
+            openFileDialog1.ShowDialog();
+            approvalFile.Text = openFileDialog1.FileName;
+            approvalFileDestination = "X:\\ELV-Subs\\facpsimplex\\CDD\\" + newcddno.Text + ".pdf";
+            //MessageBox.Show(approvalFileDestination);
+        }
+
         private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             SQLconnect.Close();
@@ -111,6 +137,6 @@ namespace Submittal_Admin_Tool
             this.Dispose();
         }
 
-
+        
     }
 }

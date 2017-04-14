@@ -140,7 +140,7 @@
   <xs:element name="_elv_submDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_elv_submDataSet" msprop:Generator_UserDSName="_elv_submDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="simplex" msprop:Generator_TableClassName="simplexDataTable" msprop:Generator_TableVarName="tablesimplex" msprop:Generator_TablePropName="simplex" msprop:Generator_RowDeletingName="simplexRowDeleting" msprop:Generator_RowChangingName="simplexRowChanging" msprop:Generator_RowEvHandlerName="simplexRowChangeEventHandler" msprop:Generator_RowDeletedName="simplexRowDeleted" msprop:Generator_UserTableName="simplex" msprop:Generator_RowChangedName="simplexRowChanged" msprop:Generator_RowEvArgName="simplexRowChangeEvent" msprop:Generator_RowClassName="simplexRow">
+        <xs:element name="simplex" msprop:Generator_TableClassName="simplexDataTable" msprop:Generator_TableVarName="tablesimplex" msprop:Generator_RowChangedName="simplexRowChanged" msprop:Generator_TablePropName="simplex" msprop:Generator_RowDeletingName="simplexRowDeleting" msprop:Generator_RowChangingName="simplexRowChanging" msprop:Generator_RowEvHandlerName="simplexRowChangeEventHandler" msprop:Generator_RowDeletedName="simplexRowDeleted" msprop:Generator_RowClassName="simplexRow" msprop:Generator_UserTableName="simplex" msprop:Generator_RowEvArgName="simplexRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="partno" msprop:Generator_ColumnVarNameInTable="columnpartno" msprop:Generator_ColumnPropNameInRow="partno" msprop:Generator_ColumnPropNameInTable="partnoColumn" msprop:Generator_UserColumnName="partno">
