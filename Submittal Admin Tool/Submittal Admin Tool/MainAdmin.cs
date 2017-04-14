@@ -65,6 +65,11 @@ namespace Submittal_Admin_Tool
 //            m.Show();
         }
 
-
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form m = new UpdateFormELV();
+            m.MdiParent = this;
+            m.Show();
+        }
     }
 }

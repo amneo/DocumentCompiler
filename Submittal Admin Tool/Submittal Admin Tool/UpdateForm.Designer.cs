@@ -41,6 +41,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.updatebutton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.browseButtonTp = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.approvalFileTp = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.thirdPartyNo = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.approvalFile = new System.Windows.Forms.TextBox();
@@ -48,6 +53,7 @@
             this.DatabaseDisplay = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.Selection.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,7 +82,7 @@
             this.newcddno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newcddno.Location = new System.Drawing.Point(10, 32);
             this.newcddno.Name = "newcddno";
-            this.newcddno.Size = new System.Drawing.Size(121, 20);
+            this.newcddno.Size = new System.Drawing.Size(163, 20);
             this.newcddno.TabIndex = 1;
             // 
             // label2
@@ -84,18 +90,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 13);
+            this.label2.Size = new System.Drawing.Size(166, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "NEW APPROVAL NUMBER";
+            this.label2.Text = "AHJ NEW APPROVAL NUMBER";
             // 
             // Selection
             // 
             this.Selection.Controls.Add(this.cddselect);
             this.Selection.Controls.Add(this.partno);
             this.Selection.Controls.Add(this.label1);
-            this.Selection.Location = new System.Drawing.Point(23, 13);
+            this.Selection.Location = new System.Drawing.Point(12, 13);
             this.Selection.Name = "Selection";
-            this.Selection.Size = new System.Drawing.Size(171, 198);
+            this.Selection.Size = new System.Drawing.Size(171, 154);
             this.Selection.TabIndex = 0;
             this.Selection.TabStop = false;
             this.Selection.Text = "SELECTION";
@@ -144,15 +150,15 @@
             // 
             this.issuedate.CustomFormat = "yyyy-MM-dd";
             this.issuedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.issuedate.Location = new System.Drawing.Point(159, 32);
+            this.issuedate.Location = new System.Drawing.Point(184, 32);
             this.issuedate.Name = "issuedate";
-            this.issuedate.Size = new System.Drawing.Size(131, 20);
+            this.issuedate.Size = new System.Drawing.Size(106, 20);
             this.issuedate.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(156, 16);
+            this.label4.Location = new System.Drawing.Point(181, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 2;
@@ -160,16 +166,21 @@
             // 
             // updatebutton
             // 
-            this.updatebutton.Location = new System.Drawing.Point(503, 169);
+            this.updatebutton.Location = new System.Drawing.Point(551, 81);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(134, 23);
-            this.updatebutton.TabIndex = 9;
+            this.updatebutton.TabIndex = 16;
             this.updatebutton.Text = "UPDATE";
             this.updatebutton.UseVisualStyleBackColor = true;
             this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.browseButtonTp);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.approvalFileTp);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.thirdPartyNo);
             this.groupBox1.Controls.Add(this.browseButton);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.approvalFile);
@@ -183,17 +194,62 @@
             this.groupBox1.Controls.Add(this.durationSelect);
             this.groupBox1.Location = new System.Drawing.Point(222, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(650, 198);
+            this.groupBox1.Size = new System.Drawing.Size(691, 154);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "UPDATE";
             // 
+            // browseButtonTp
+            // 
+            this.browseButtonTp.Location = new System.Drawing.Point(330, 81);
+            this.browseButtonTp.Name = "browseButtonTp";
+            this.browseButtonTp.Size = new System.Drawing.Size(75, 23);
+            this.browseButtonTp.TabIndex = 15;
+            this.browseButtonTp.Text = "Browse";
+            this.browseButtonTp.UseVisualStyleBackColor = true;
+            this.browseButtonTp.Click += new System.EventHandler(this.browseButtonTp_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(181, 66);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "THIRD PARTY APPROVAL FILE";
+            // 
+            // approvalFileTp
+            // 
+            this.approvalFileTp.Location = new System.Drawing.Point(184, 82);
+            this.approvalFileTp.Name = "approvalFileTp";
+            this.approvalFileTp.ReadOnly = true;
+            this.approvalFileTp.ShortcutsEnabled = false;
+            this.approvalFileTp.Size = new System.Drawing.Size(140, 20);
+            this.approvalFileTp.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(152, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "THIRD PARTY LISTING / NO";
+            // 
+            // thirdPartyNo
+            // 
+            this.thirdPartyNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.thirdPartyNo.Location = new System.Drawing.Point(10, 82);
+            this.thirdPartyNo.Name = "thirdPartyNo";
+            this.thirdPartyNo.Size = new System.Drawing.Size(163, 20);
+            this.thirdPartyNo.TabIndex = 12;
+            // 
             // browseButton
             // 
-            this.browseButton.Location = new System.Drawing.Point(562, 29);
+            this.browseButton.Location = new System.Drawing.Point(610, 31);
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(75, 23);
-            this.browseButton.TabIndex = 8;
+            this.browseButton.TabIndex = 10;
             this.browseButton.Text = "Browse";
             this.browseButton.UseVisualStyleBackColor = true;
             this.browseButton.Click += new System.EventHandler(this.button1_Click_1);
@@ -213,8 +269,8 @@
             this.approvalFile.Name = "approvalFile";
             this.approvalFile.ReadOnly = true;
             this.approvalFile.ShortcutsEnabled = false;
-            this.approvalFile.Size = new System.Drawing.Size(100, 20);
-            this.approvalFile.TabIndex = 7;
+            this.approvalFile.Size = new System.Drawing.Size(148, 20);
+            this.approvalFile.TabIndex = 9;
             // 
             // durationDigit
             // 
@@ -227,7 +283,7 @@
             // DatabaseDisplay
             // 
             this.DatabaseDisplay.AutoSize = true;
-            this.DatabaseDisplay.Location = new System.Drawing.Point(6, 228);
+            this.DatabaseDisplay.Location = new System.Drawing.Point(9, 185);
             this.DatabaseDisplay.Name = "DatabaseDisplay";
             this.DatabaseDisplay.Size = new System.Drawing.Size(112, 13);
             this.DatabaseDisplay.TabIndex = 0;
@@ -238,10 +294,10 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 244);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 201);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(901, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(901, 295);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
             // 
@@ -251,6 +307,10 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "PDF Files (.pdf)|*.pdf";
             this.openFileDialog1.InitialDirectory = "c:";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
             // 
             // UpdateFormELV
             // 
@@ -302,5 +362,11 @@
         private System.Windows.Forms.TextBox approvalFile;
         private System.Windows.Forms.Button browseButton;
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox thirdPartyNo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox approvalFileTp;
+        private System.Windows.Forms.Button browseButtonTp;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
     }
 }

@@ -32,8 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eLVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mECHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eLVToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mechToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +62,8 @@
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateToolStripMenuItem,
             this.addToolStripMenuItem,
+            this.updateToolStripMenuItem,
             this.deleteToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
@@ -74,27 +72,10 @@
             // 
             // updateToolStripMenuItem
             // 
-            this.updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eLVToolStripMenuItem,
-            this.mECHToolStripMenuItem});
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.updateToolStripMenuItem.Text = "Update";
-            // 
-            // eLVToolStripMenuItem
-            // 
-            this.eLVToolStripMenuItem.Name = "eLVToolStripMenuItem";
-            this.eLVToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.eLVToolStripMenuItem.Text = "ELV";
-            this.eLVToolStripMenuItem.Click += new System.EventHandler(this.eLVToolStripMenuItem_Click);
-            // 
-            // mECHToolStripMenuItem
-            // 
-            this.mECHToolStripMenuItem.Enabled = false;
-            this.mECHToolStripMenuItem.Name = "mECHToolStripMenuItem";
-            this.mECHToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.mECHToolStripMenuItem.Text = "MECH";
-            this.mECHToolStripMenuItem.Click += new System.EventHandler(this.mECHToolStripMenuItem_Click);
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -102,14 +83,14 @@
             this.eLVToolStripMenuItem1,
             this.mechToolStripMenuItem1});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // eLVToolStripMenuItem1
             // 
             this.eLVToolStripMenuItem1.Enabled = false;
             this.eLVToolStripMenuItem1.Name = "eLVToolStripMenuItem1";
-            this.eLVToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.eLVToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.eLVToolStripMenuItem1.Text = "ELV";
             this.eLVToolStripMenuItem1.Click += new System.EventHandler(this.eLVToolStripMenuItem1_Click);
             // 
@@ -117,20 +98,20 @@
             // 
             this.mechToolStripMenuItem1.Enabled = false;
             this.mechToolStripMenuItem1.Name = "mechToolStripMenuItem1";
-            this.mechToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.mechToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.mechToolStripMenuItem1.Text = "Mech";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Enabled = false;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -206,8 +187,6 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem version01aToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eLVToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mECHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eLVToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mechToolStripMenuItem1;
