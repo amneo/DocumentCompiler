@@ -113,12 +113,6 @@
     <Compile Include="UpdateForm.Designer.cs">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateMech.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateMech.Designer.cs">
-      <DependentUpon>UpdateMech.cs</DependentUpon>
-    </Compile>
     <Compile Include="_elv_submDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -142,9 +136,6 @@
     </Compile>
     <EmbeddedResource Include="UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateMech.resx">
-      <DependentUpon>UpdateMech.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

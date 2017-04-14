@@ -90,6 +90,7 @@
             // 
             // mECHToolStripMenuItem
             // 
+            this.mECHToolStripMenuItem.Enabled = false;
             this.mECHToolStripMenuItem.Name = "mECHToolStripMenuItem";
             this.mECHToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.mECHToolStripMenuItem.Text = "MECH";
@@ -106,8 +107,9 @@
             // 
             // eLVToolStripMenuItem1
             // 
+            this.eLVToolStripMenuItem1.Enabled = false;
             this.eLVToolStripMenuItem1.Name = "eLVToolStripMenuItem1";
-            this.eLVToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.eLVToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.eLVToolStripMenuItem1.Text = "ELV";
             this.eLVToolStripMenuItem1.Click += new System.EventHandler(this.eLVToolStripMenuItem1_Click);
             // 
@@ -115,7 +117,7 @@
             // 
             this.mechToolStripMenuItem1.Enabled = false;
             this.mechToolStripMenuItem1.Name = "mechToolStripMenuItem1";
-            this.mechToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.mechToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.mechToolStripMenuItem1.Text = "Mech";
             // 
             // deleteToolStripMenuItem
@@ -143,7 +145,7 @@
             // version01aToolStripMenuItem
             // 
             this.version01aToolStripMenuItem.Name = "version01aToolStripMenuItem";
-            this.version01aToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.version01aToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.version01aToolStripMenuItem.Text = "Version .01a";
             // 
             // fileSystemWatcher1

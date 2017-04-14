@@ -1,6 +1,6 @@
 ﻿namespace Submittal_Admin_Tool
 {
-    partial class UpdateFormMech
+    partial class UpdateFormELV
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFormMech));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFormELV));
             this.partno = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.newcddno = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             // 
             this.newcddno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.newcddno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newcddno.Location = new System.Drawing.Point(435, 69);
+            this.newcddno.Location = new System.Drawing.Point(29, 59);
             this.newcddno.Name = "newcddno";
             this.newcddno.Size = new System.Drawing.Size(121, 20);
             this.newcddno.TabIndex = 3;
@@ -77,11 +77,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 53);
+            this.label2.Location = new System.Drawing.Point(26, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 13);
+            this.label2.Size = new System.Drawing.Size(143, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "NEW CDD FILE NUMBER";
+            this.label2.Text = "NEW APPROVAL NUMBER";
             // 
             // Selection
             // 
@@ -90,14 +90,14 @@
             this.Selection.Controls.Add(this.label1);
             this.Selection.Location = new System.Drawing.Point(23, 13);
             this.Selection.Name = "Selection";
-            this.Selection.Size = new System.Drawing.Size(341, 164);
+            this.Selection.Size = new System.Drawing.Size(171, 198);
             this.Selection.TabIndex = 0;
             this.Selection.TabStop = false;
             this.Selection.Text = "SELECTION";
             // 
             // cddselect
             // 
-            this.cddselect.Location = new System.Drawing.Point(170, 57);
+            this.cddselect.Location = new System.Drawing.Point(12, 104);
             this.cddselect.Name = "cddselect";
             this.cddselect.Size = new System.Drawing.Size(127, 23);
             this.cddselect.TabIndex = 2;
@@ -127,6 +127,7 @@
             this.yearselect.Size = new System.Drawing.Size(134, 21);
             this.yearselect.Sorted = true;
             this.yearselect.TabIndex = 1;
+            this.yearselect.SelectedIndexChanged += new System.EventHandler(this.yearselect_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -169,10 +170,12 @@
             // 
             this.groupBox1.Controls.Add(this.updatebutton);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.newcddno);
             this.groupBox1.Controls.Add(this.yearselect);
-            this.groupBox1.Location = new System.Drawing.Point(393, 13);
+            this.groupBox1.Location = new System.Drawing.Point(222, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(479, 164);
+            this.groupBox1.Size = new System.Drawing.Size(650, 164);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "UPDATE";
@@ -182,23 +185,23 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 211);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 342);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(901, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(901, 154);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
             // 
             // DatabaseDisplay
             // 
             this.DatabaseDisplay.AutoSize = true;
-            this.DatabaseDisplay.Location = new System.Drawing.Point(25, 195);
+            this.DatabaseDisplay.Location = new System.Drawing.Point(20, 310);
             this.DatabaseDisplay.Name = "DatabaseDisplay";
             this.DatabaseDisplay.Size = new System.Drawing.Size(112, 13);
             this.DatabaseDisplay.TabIndex = 0;
             this.DatabaseDisplay.Text = "DATABASE DISPLAY";
             // 
-            // UpdateFormMech
+            // UpdateFormELV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -207,8 +210,6 @@
             this.ClientSize = new System.Drawing.Size(925, 508);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.issuedate);
-            this.Controls.Add(this.newcddno);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.DatabaseDisplay);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Selection);
@@ -216,7 +217,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "UpdateFormMech";
+            this.Name = "UpdateFormELV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update ELV";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateForm_FormClosing);

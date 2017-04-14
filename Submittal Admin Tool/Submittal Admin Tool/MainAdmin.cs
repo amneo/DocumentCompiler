@@ -39,7 +39,7 @@ namespace Submittal_Admin_Tool
         private void eLVToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            Form m = new UpdateFormMech();
+            Form m = new UpdateFormELV();
             m.MdiParent = this;
             m.Show();
         }
@@ -60,9 +60,9 @@ namespace Submittal_Admin_Tool
 
         private void mECHToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form m = new UpdateMech();
-            m.MdiParent = this;
-            m.Show();
+//            Form m = new UpdateMech();
+//            m.MdiParent = this;
+//            m.Show();
         }
 
 

@@ -11,12 +11,12 @@ using System.Data.SQLite;
 
 namespace Submittal_Admin_Tool
 {
-    public partial class UpdateFormMech : Form
+    public partial class UpdateFormELV : Form
     {
 
         Data_connection dbobject = new Data_connection();
         SQLiteConnection SQLconnect = new SQLiteConnection();
-        public UpdateFormMech()
+        public UpdateFormELV()
         {
             InitializeComponent();
         }
@@ -110,5 +110,7 @@ namespace Submittal_Admin_Tool
             GC.WaitForPendingFinalizers();
             this.Dispose();
         }
+
+
     }
 }
