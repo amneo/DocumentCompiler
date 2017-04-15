@@ -328,7 +328,7 @@
             this.MinimizeBox = false;
             this.Name = "UpdateFormELV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Update ELV";
+            this.Text = "Update Database";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateForm_FormClosing);
             this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.Selection.ResumeLayout(false);
