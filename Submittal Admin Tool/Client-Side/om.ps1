@@ -112,7 +112,7 @@ if (($new_project_name.Length) -gt 4)
      $new_project_name = $new_project_name.Substring(0,5)
      }
 write-Host "Project Name Pre-fix: `n$new_project_name" -foregroundcolor "WHITE" -backgroundcolor "BLACK"
-write-Host "Submittal System Type: `nPress: 1 For Simplex Submittal`nPress: 2 For Custom Submittal `nPress: 3 For converting DOCX files to PDF `nPress: 4 For Creating Simplex Custom Clearance Documents `nPress: 5 For Mechanical System Submittal `nPress: 6 For Creating Mechanical Custom Clearance Documents" -foregroundcolor "GREEN" -backgroundcolor "BLUE"
+write-Host "Submittal System Type: `nPress: 1 For Submittal With Grouped AHJ & Third Party Documents  `nPress: 2 NOT IN USE `nPress: 3 For converting DOCX files to PDF `nPress: 4 For Creating Customs Clearance Documents `nPress: 5 For Mechanical System Submittal `nPress: 6 For Creating Mechanical Custom Clearance Documents" -foregroundcolor "GREEN" -backgroundcolor "BLUE"
 $matindexfile = "$home\desktop\" + $new_project_name + "_MAT_INDEX" + '_' + $base_date + '.csv' ## Creating Material Index file name
 $system_type = $host.UI.RawUI.ReadKey("Noecho,IncludeKeyDown")
 $finalfile = "$home\Desktop\$new_project_name" + "_$base_date.pdf"
