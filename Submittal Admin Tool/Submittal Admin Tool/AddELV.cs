@@ -74,6 +74,8 @@ namespace Submittal_Admin_Tool
 
         private void AddELV_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_elv_submDataSet.simplex' table. You can move, or remove it, as needed.
+            this.simplexTableAdapter.Fill(this._elv_submDataSet.simplex);
             try
             {
                 SQLconnect.ConnectionString = @"DateTimeFormat=ISO8601;DateTimeKind=local;FailIfMissing=True;Data Source=X:\ELV-Subs\elv-subm";
@@ -86,6 +88,14 @@ namespace Submittal_Admin_Tool
                 this.Close();
             }
       
+        }
+
+        private void simplexBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.simplexBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this._elv_submDataSet);
+
         }
     }
 }

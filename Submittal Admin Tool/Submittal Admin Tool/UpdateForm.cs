@@ -128,7 +128,7 @@ namespace Submittal_Admin_Tool
             openFileDialog1.ShowDialog();
             approvalFile.Text = openFileDialog1.FileName;
             approvalFileDestination = "X:\\ELV-Subs\\facpsimplex\\CDD\\" + newcddno.Text + ".pdf";
-            //MessageBox.Show(approvalFileDestination);
+            MessageBox.Show(approvalFileDestination); //enabling for debuging
         }
 
         private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -156,7 +156,7 @@ namespace Submittal_Admin_Tool
             openFileDialog2.ShowDialog();
             approvalFileTp.Text = openFileDialog2.FileName;
             approvalFileDestinationTp = "X:\\ELV-Subs\\facpsimplex\\UL\\" + thirdPartyNo.Text + "-UL" + ".pdf";
-            //MessageBox.Show(approvalFileDestination);
+            MessageBox.Show(approvalFileDestinationTp); //enabling for debuging
         }
     }
 }

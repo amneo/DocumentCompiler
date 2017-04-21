@@ -1,6 +1,6 @@
 $start_time = get-date
 $version = "00.09.00a"
-$ReleaseDate = "2014-10-20"
+$ReleaseDate = "2017-04-27"
 # Create Submittal out of Text Index.
 #######
 # OS and Environment limitation.

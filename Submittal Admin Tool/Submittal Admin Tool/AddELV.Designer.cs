@@ -28,19 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddELV));
-            this.Save = new System.Windows.Forms.Button();
+            this._elv_submDataSet = new Submittal_Admin_Tool._elv_submDataSet();
+            this.simplexBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.simplexTableAdapter = new Submittal_Admin_Tool._elv_submDataSetTableAdapters.simplexTableAdapter();
+            this.tableAdapterManager = new Submittal_Admin_Tool._elv_submDataSetTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this._elv_submDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simplexBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // Save
+            // _elv_submDataSet
             // 
-            this.Save.Location = new System.Drawing.Point(823, 451);
-            this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(75, 23);
-            this.Save.TabIndex = 1;
-            this.Save.Text = "Save";
-            this.Save.UseVisualStyleBackColor = true;
-            this.Save.Click += new System.EventHandler(this.Save_Click);
+            this._elv_submDataSet.DataSetName = "_elv_submDataSet";
+            this._elv_submDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // simplexBindingSource
+            // 
+            this.simplexBindingSource.DataMember = "simplex";
+            this.simplexBindingSource.DataSource = this._elv_submDataSet;
+            // 
+            // simplexTableAdapter
+            // 
+            this.simplexTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.simplexTableAdapter = this.simplexTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Submittal_Admin_Tool._elv_submDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // AddELV
             // 
@@ -48,7 +64,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(925, 508);
-            this.Controls.Add(this.Save);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -59,11 +74,16 @@
             this.Text = "ELV Add Data";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddELV_FormClosed);
             this.Load += new System.EventHandler(this.AddELV_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._elv_submDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simplexBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button Save;
+        private _elv_submDataSet _elv_submDataSet;
+        private System.Windows.Forms.BindingSource simplexBindingSource;
+        private _elv_submDataSetTableAdapters.simplexTableAdapter simplexTableAdapter;
+        private _elv_submDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

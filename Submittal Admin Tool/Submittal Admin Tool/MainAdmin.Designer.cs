@@ -31,17 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eLVToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mechToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statutoryDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logTrackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.thirdPartyDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aHJExpiryDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.version01aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -51,6 +55,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
+            this.reportsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -62,58 +67,72 @@
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem,
-            this.updateToolStripMenuItem,
-            this.deleteToolStripMenuItem,
+            this.thirdPartyDocumentsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.statutoryDocumentsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.optionsToolStripMenuItem.Text = "Edit";
             // 
-            // updateToolStripMenuItem
+            // statutoryDocumentsToolStripMenuItem
             // 
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            this.statutoryDocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logTrackToolStripMenuItem});
+            this.statutoryDocumentsToolStripMenuItem.Name = "statutoryDocumentsToolStripMenuItem";
+            this.statutoryDocumentsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.statutoryDocumentsToolStripMenuItem.Text = "Statutory Documents";
             // 
-            // addToolStripMenuItem
+            // logTrackToolStripMenuItem
             // 
-            this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eLVToolStripMenuItem1,
-            this.mechToolStripMenuItem1});
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.addToolStripMenuItem.Text = "Add";
+            this.logTrackToolStripMenuItem.Enabled = false;
+            this.logTrackToolStripMenuItem.Name = "logTrackToolStripMenuItem";
+            this.logTrackToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logTrackToolStripMenuItem.Text = "Log Track";
             // 
-            // eLVToolStripMenuItem1
+            // toolStripSeparator1
             // 
-            this.eLVToolStripMenuItem1.Enabled = false;
-            this.eLVToolStripMenuItem1.Name = "eLVToolStripMenuItem1";
-            this.eLVToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.eLVToolStripMenuItem1.Text = "ELV";
-            this.eLVToolStripMenuItem1.Click += new System.EventHandler(this.eLVToolStripMenuItem1_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
             // 
-            // mechToolStripMenuItem1
+            // thirdPartyDocumentsToolStripMenuItem
             // 
-            this.mechToolStripMenuItem1.Enabled = false;
-            this.mechToolStripMenuItem1.Name = "mechToolStripMenuItem1";
-            this.mechToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.mechToolStripMenuItem1.Text = "Mech";
+            this.thirdPartyDocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.moreToolStripMenuItem,
+            this.addToolStripMenuItem1,
+            this.deleteToolStripMenuItem1});
+            this.thirdPartyDocumentsToolStripMenuItem.Name = "thirdPartyDocumentsToolStripMenuItem";
+            this.thirdPartyDocumentsToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.thirdPartyDocumentsToolStripMenuItem.Text = "Documents Mapping";
             // 
-            // deleteToolStripMenuItem
+            // moreToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Enabled = false;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.moreToolStripMenuItem.Name = "moreToolStripMenuItem";
+            this.moreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.moreToolStripMenuItem.Text = "Update";
+            this.moreToolStripMenuItem.Click += new System.EventHandler(this.moreToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aHJExpiryDocumentsToolStripMenuItem});
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem.Text = "Reports";
+            // 
+            // aHJExpiryDocumentsToolStripMenuItem
+            // 
+            this.aHJExpiryDocumentsToolStripMenuItem.Enabled = false;
+            this.aHJExpiryDocumentsToolStripMenuItem.Name = "aHJExpiryDocumentsToolStripMenuItem";
+            this.aHJExpiryDocumentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aHJExpiryDocumentsToolStripMenuItem.Text = "Statutory Doc Expiry";
             // 
             // helpToolStripMenuItem
             // 
@@ -150,6 +169,21 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(425, 17);
             this.toolStripStatusLabel1.Text = "For Error Report to helpdesk@jerseygroup.com AND vishal.k@firelinkqatar.com";
             // 
+            // addToolStripMenuItem1
+            // 
+            this.addToolStripMenuItem1.Enabled = false;
+            this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem1.Text = "Add";
+            this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
+            // 
+            // deleteToolStripMenuItem1
+            // 
+            this.deleteToolStripMenuItem1.Enabled = false;
+            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem1.Text = "Delete";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,17 +215,21 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem version01aToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eLVToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mechToolStripMenuItem1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripMenuItem statutoryDocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logTrackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem thirdPartyDocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aHJExpiryDocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
     }
 }
 

@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Submittal Admin Tool.exe" size="730544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Submittal Admin Tool.exe" size="783280">
       <assemblyIdentity name="Submittal Admin Tool" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kO7kROd+kMbKM3m75LkEyxzGbpfC/vqDId6W8TGlt4c=</dsig:DigestValue>
+        <dsig:DigestValue>wyzP1jfZi6WJunw3Xe/u8+WYfUKJ5tu5TEpLPlVKvFg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
