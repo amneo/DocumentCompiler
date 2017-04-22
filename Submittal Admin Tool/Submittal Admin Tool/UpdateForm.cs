@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+//using System.Collections.Generic;
+//using System.ComponentModel;
 using System.Data;
 //using System.Drawing;
 //using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.IO;
@@ -15,7 +15,8 @@ namespace Submittal_Admin_Tool
 
     public partial class UpdateFormELV : Form
     {
-        private string approvalFileDestination , approvalFileDestinationTp;
+        public string approvalFileDestination, approvalFileDestinationTp; //CDD file name variable
+        public DateTime myFileDate = DateTime.Now; // Attributes to be updated.
         Data_connection dbobject = new Data_connection();
         SQLiteConnection SQLconnect = new SQLiteConnection();
         public UpdateFormELV()
@@ -23,13 +24,11 @@ namespace Submittal_Admin_Tool
             InitializeComponent();
         }
 
+        /// On Load function
+        /// Check if the SQLite database is assesable and connected.
         private void UpdateForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_elv_submDataSet.simplex' table. You can move, or remove it, as needed.
-            // this.simplexTableAdapter.Fill(this._elv_submDataSet.simplex);
-            // string approvalFileDestination = null;
-         
-            try
+          try
             {
                 SQLconnect.ConnectionString = @"DateTimeFormat=ISO8601;DateTimeKind=local;FailIfMissing=True;Data Source=X:\ELV-Subs\elv-subm";
                 SQLconnect.Open();
@@ -47,7 +46,7 @@ namespace Submittal_Admin_Tool
             if (partno.Text == "")
             {
                 string mynewquery = string.Format("SELECT systrade, partno,  cdd, ul,  tittle, cddissue, cddno, duration, expirydt,coo,url,isdatasheet FROM simplex");
-               //MessageBox.Show(mynewquery);
+                //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 SQLiteDataAdapter da = new SQLiteDataAdapter();
                 DataTable dt = new DataTable();
@@ -66,7 +65,7 @@ namespace Submittal_Admin_Tool
             else
             {
                 string mynewquery = string.Format("SELECT systrade, partno,  cdd, ul,  tittle, cddissue, cddno, duration, expirydt,coo,url,isdatasheet FROM simplex where partno = \'{0}\'", partno.Text);
-              //  MessageBox.Show(mynewquery);
+                //  MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 SQLiteDataAdapter da = new SQLiteDataAdapter();
                 DataTable dt = new DataTable();
@@ -75,6 +74,7 @@ namespace Submittal_Admin_Tool
                 if (dt.Rows.Count > 0)
                 {
                     dataGridView1.DataSource = dt;
+                    //partno.Text = dataGridView1.G;
                 }
                 else
                 {
@@ -88,18 +88,20 @@ namespace Submittal_Admin_Tool
 
         private void updatebutton_Click(object sender, EventArgs e)
         {
-           if (newcddno.Text != ""  && thirdPartyNo.Text != "" && approvalFile.Text != "" && approvalFileTp.Text != "" && durationDigit.Text != "" )
+            if (newcddno.Text != "" && thirdPartyNo.Text != "" && approvalFile.Text != "" && approvalFileTp.Text != "" && durationDigit.Text != "")
             {
-                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" , cdd = \"{0}\" , ul = \"{4}\"  where partno='{3}\'", newcddno.Text, issuedate.Text, durationDigit.Text + " "+ durationSelect.Text, partno.Text, thirdPartyNo.Text + "-UL");
+                string mynewquery = string.Format("update simplex set cddno = \"{0}\" , cddissue =\"{1}\" ,duration = \"{2}\" , cdd = \"{0}\" , ul = \"{4}\"  where partno='{3}\'", newcddno.Text.Trim(), issuedate.Text.Trim(), durationDigit.Text.Trim() + " " + durationSelect.Text.Trim(), partno.Text.Trim(), thirdPartyNo.Text.Trim() + "-UL");
                 //MessageBox.Show(mynewquery);
                 SQLiteCommand cmd = new SQLiteCommand(mynewquery, SQLconnect);
                 cmd.ExecuteNonQuery();
                 partno.Text = partno.Text;  //Not required since updating with part numbers
                 Cddselect_Click(sender, e);
-                File.Copy(approvalFile.Text, approvalFileDestination,true);
+                File.Copy(approvalFile.Text, approvalFileDestination, true);
                 File.Copy(approvalFileTp.Text, approvalFileDestinationTp, true);
+                File.SetLastWriteTime(approvalFileDestination, myFileDate);  // This is to ensure that the files are touched (Linux) and have latest write date set on them
+                File.SetLastWriteTime(approvalFileDestinationTp, myFileDate); // This is to ensure that the files are touched (Linux) and have latest write date set on them
                 //ensuring all fields are null again
-                approvalFile.Text = approvalFileTp.Text = thirdPartyNo.Text = newcddno.Text = durationDigit.Text = "" ;
+                approvalFile.Text = approvalFileTp.Text = thirdPartyNo.Text = newcddno.Text = durationDigit.Text = "";
             }
             else
             {
@@ -110,7 +112,7 @@ namespace Submittal_Admin_Tool
 
         }
 
-        
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -128,7 +130,8 @@ namespace Submittal_Admin_Tool
             openFileDialog1.ShowDialog();
             approvalFile.Text = openFileDialog1.FileName;
             approvalFileDestination = "X:\\ELV-Subs\\facpsimplex\\CDD\\" + newcddno.Text + ".pdf";
-            MessageBox.Show(approvalFileDestination); //enabling for debuging
+          //  MessageBox.Show(approvalFileDestination); //enabling for debuging
+          //  MessageBox.Show("The Date is " + myFileDate);
         }
 
         private void UpdateForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -156,7 +159,7 @@ namespace Submittal_Admin_Tool
             openFileDialog2.ShowDialog();
             approvalFileTp.Text = openFileDialog2.FileName;
             approvalFileDestinationTp = "X:\\ELV-Subs\\facpsimplex\\UL\\" + thirdPartyNo.Text + "-UL" + ".pdf";
-            MessageBox.Show(approvalFileDestinationTp); //enabling for debuging
+           // MessageBox.Show(approvalFileDestinationTp); //enabling for debuging
         }
     }
 }

@@ -52,9 +52,9 @@ namespace Submittal_Admin_Tool
 
         private void eLVToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form m = new AddELV();
-            m.MdiParent = this;
-            m.Show();
+           // Form m = new AddELV();
+            //m.MdiParent = this;
+           // m.Show();
            
         }
 
@@ -81,9 +81,9 @@ namespace Submittal_Admin_Tool
 
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form m = new AddELV();
-            m.MdiParent = this;
-            m.Show();
+          //  Form m = new AddELV();
+          //  m.MdiParent = this;
+          //  m.Show();
         }
     }
 }
