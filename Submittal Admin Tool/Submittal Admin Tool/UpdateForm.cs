@@ -1,11 +1,5 @@
 ﻿using System;
-//using System.Collections.Generic;
-//using System.ComponentModel;
 using System.Data;
-//using System.Drawing;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.IO;
@@ -15,8 +9,8 @@ namespace Submittal_Admin_Tool
 
     public partial class UpdateFormELV : Form
     {
-        public string approvalFileDestination, approvalFileDestinationTp; //CDD file name variable
-        public DateTime myFileDate = DateTime.Now; // Attributes to be updated.
+        private string approvalFileDestination, approvalFileDestinationTp; //CDD file name variable
+        private DateTime myFileDate = DateTime.Now; // Attributes to be updated.
         Data_connection dbobject = new Data_connection();
         SQLiteConnection SQLconnect = new SQLiteConnection();
         public UpdateFormELV()
@@ -115,18 +109,18 @@ namespace Submittal_Admin_Tool
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.InitialDirectory = @"C:\";
-            openFileDialog1.Title = "Browse Approval PDF Files";
-            openFileDialog1.CheckFileExists = true;
-            openFileDialog1.CheckPathExists = true;
-            openFileDialog1.DefaultExt = "pdf";
-            openFileDialog1.Filter = "PDF File (*.pdf)|*.pdf";
-            openFileDialog1.FilterIndex = 1;
-            openFileDialog1.RestoreDirectory = true;
-            openFileDialog1.ReadOnlyChecked = true;
-            openFileDialog1.ShowReadOnly = true;
-            openFileDialog1.Multiselect = false;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog(); // properties to be checked and code removed might be hogging memory
+            openFileDialog1.InitialDirectory = @"C:\"; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.Title = "Browse Approval PDF Files"; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.CheckFileExists = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.CheckPathExists = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.DefaultExt = "pdf"; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.Filter = "PDF File (*.pdf)|*.pdf"; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.FilterIndex = 1; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.RestoreDirectory = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.ReadOnlyChecked = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.ShowReadOnly = false; // properties to be checked and code removed might be hogging memory
+            openFileDialog1.Multiselect = false; // properties to be checked and code removed might be hogging memory
             openFileDialog1.ShowDialog();
             approvalFile.Text = openFileDialog1.FileName;
             approvalFileDestination = "X:\\ELV-Subs\\facpsimplex\\CDD\\" + newcddno.Text + ".pdf";
@@ -144,21 +138,21 @@ namespace Submittal_Admin_Tool
 
         private void browseButtonTp_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog2 = new OpenFileDialog();
-            openFileDialog2.InitialDirectory = @"C:\";
-            openFileDialog2.Title = "Browse Third Party PDF Files";
-            openFileDialog2.CheckFileExists = true;
-            openFileDialog2.CheckPathExists = true;
-            openFileDialog2.DefaultExt = "pdf";
-            openFileDialog2.Filter = "PDF File (*.pdf)|*.pdf";
-            openFileDialog2.FilterIndex = 1;
-            openFileDialog2.RestoreDirectory = true;
-            openFileDialog2.ReadOnlyChecked = true;
-            openFileDialog2.ShowReadOnly = true;
-            openFileDialog2.Multiselect = false;
+            OpenFileDialog openFileDialog2 = new OpenFileDialog(); // properties to be checked and code removed might be hogging memory
+            openFileDialog2.InitialDirectory = @"C:\"; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.Title = "Browse Third Party PDF Files"; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.CheckFileExists = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.CheckPathExists = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.DefaultExt = "pdf"; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.Filter = "PDF File (*.pdf)|*.pdf"; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.FilterIndex = 1; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.RestoreDirectory = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.ReadOnlyChecked = false; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.ShowReadOnly = true; // properties to be checked and code removed might be hogging memory
+            openFileDialog2.Multiselect = false; // properties to be checked and code removed might be hogging memory
             openFileDialog2.ShowDialog();
             approvalFileTp.Text = openFileDialog2.FileName;
-            approvalFileDestinationTp = "X:\\ELV-Subs\\facpsimplex\\UL\\" + thirdPartyNo.Text + "-UL" + ".pdf";
+            approvalFileDestinationTp = "X:\\ELV-Subs\\facpsimplex\\UL\\" + thirdPartyNo.Text + "-UL" + ".pdf"; //destination file name is thirdparty listing text
            // MessageBox.Show(approvalFileDestinationTp); //enabling for debuging
         }
     }

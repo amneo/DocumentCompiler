@@ -59,8 +59,6 @@ D:\develop\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submitta
 D:\develop\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
 D:\develop\subutool\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe.config
-D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
-D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe.manifest
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.application
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Submittal Admin Tool.exe
@@ -73,10 +71,14 @@ D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\EnvDTE.dll
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\bin\Debug\stdole.dll
+D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.AboutBox1.resources
+D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.LogicalAdd.resources
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.MainWindow.resources
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.Properties.Resources.resources
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal_Admin_Tool.UpdateFormELV.resources
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csproj.GenerateResource.Cache
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe.manifest
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.application
+D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.exe
+D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.pdb
 D:\develop\DocumentCompiler\Submittal Admin Tool\Submittal Admin Tool\obj\Debug\Submittal Admin Tool.csprojResolveAssemblyReference.cache
